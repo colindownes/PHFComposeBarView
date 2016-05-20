@@ -159,11 +159,7 @@ static CGFloat kTextViewToSuperviewHeightDelta;
 @synthesize buttonTitle = _buttonTitle;
 - (NSString *)buttonTitle {
     if (!_buttonTitle)
-        _buttonTitle = NSLocalizedStringWithDefaultValue(@"Button Title",
-                                                        nil,
-                                                        [NSBundle bundleForClass:[self class]],
-                                                        @"Send",
-                                                        @"The default value for the main button");
+        _buttonTitle = NSLocalizedString(@"Send", @"Add a new comment or send a message");
 
     return _buttonTitle;
 }
